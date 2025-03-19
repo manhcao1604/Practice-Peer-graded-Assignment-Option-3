@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #444;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f9fa !important;
+}
+
+section {
+    padding: 40px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+form input, form textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003d80;
+}
+
+footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #f8f8f8;
+}
+
+.dark-mode .card-title {
+    color: #4da8f7;
+}
+
+.dark-mode form button {
+    background-color: #4da8f7;
+}
+
+.dark-mode form button:hover {
+    background-color: #3a7db5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    .card img {
+        height: 150px;
+    }
+}
